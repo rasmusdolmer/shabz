@@ -1,0 +1,202 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  
+  .headerMain {
+    height: 65px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  
+  .headerMain h1 {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 65px;
+    font-size: 22px;
+    color: #111111;
+  }
+  
+  .navMain {
+    height: 65px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #e7e7e7;
+  }
+  
+  .navButton {
+    display: inline-block;
+    height: 100%;
+    min-width: 100px;
+    color: #007aff;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 65px;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  
+  .navButton.small {
+    min-width: 65px;
+  }
+  
+  .navButton span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .left {
+    float: left;
+  }
+  
+  .right {
+    float: right;
+  }
+  
+  .middle {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-width: 100px;
+  }
+  
+  .navButton.navButtonAction {
+    background-color: #ff0600;
+    line-height: 40px;
+    color: #ffffff;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    padding-top: 32px;
+    margin-top: -85px;
+    width: 100px;
+  }
+  
+  .navButton.navButtonAction.unlocked {
+    background-color: #007aff;
+  }
+  
+  .content {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 66px;
+    max-height: calc(100vh - 66px - 66px);
+    height: 800px;
+    overflow-y: auto;
+  }
+  
+  /*Menu*/
+  
+  #menu{
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.12);
+    right: 24px;
+      top: 60px;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    width:50%;
+    max-width: 170px;
+  }
+  
+  #menu ul{
+    margin: 0;
+    padding:0; 
+  
+  }
+  
+  #menu ul li{
+    list-style: none;
+  }
+  
+  #menu ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+    padding: 12px 85px 12px 12px;
+      font-size: 16px;
+      text-align: right;
+  }
+  
+  /*MENU*/
+  
+  /*Log*/
+  
+  #log{
+    position: relative;
+  }
+  
+  .log ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transform: rotate(180deg);
+  }
+  
+  .log ul li{
+    border-bottom: 1px solid #eee;
+    padding:3px 15px; 
+    font-size: 14px;
+    transition: .05s all linear;
+    transform: rotate(-180deg);
+    position: relative;
+  }
+  
+  .slideUl{
+    top: -43px;
+  }
+  
+  .fadeLi{
+    opacity: 0;
+  }
+  
+  .slideUl{animation:slideUl .5s ease forwards;}
+  @keyframes slideUl{
+    from {top: -43px}
+    to {top:0;}  
+  }
+  
+  .fadeLi{animation: fadeLi .4s ease-in forwards;}
+  @keyframes fadeLi{
+    from {opacity: 0}
+    to {opacity: 1;}  
+  }
+  
+  
+  .log ul li:hover{
+    background-color:rgb(248, 248, 248);
+  }
+  
+  .log ul li span{
+    float:right;
+    font-weight: 700;
+    position: relative;
+    top: 9px;
+  }
+  
+  .log ul li p{
+    margin: 0;
+    color: #007aff;
+    font-weight: 700;
+  }
+  
+  .locked{
+    color:#ff0600 !important;
+  }
+  
+  /*Log*/
